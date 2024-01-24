@@ -42,7 +42,7 @@ jobs:
         with:
           # The container image name needs the custom registry in it.
           # Maybe there is a default env var for this?
-          images: git.maronato.dev/${{ github.repository }}
+          images: ghcr.io/${{ github.repository }}
           tags: |
             type=ref,event=branch
             type=ref,event=pr
